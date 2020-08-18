@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* 460px */
+
+@media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+body {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+
+nav {
+    background-color: #F8F32B;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    z-index: 10;
+}
+
+@media (max-width: 28.75em) {
+    nav {
+        padding: 1.6rem;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: black;
+    margin-right: 2rem;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 28.75em) {
+    nav a {
+        margin-right: 1rem;
+    }
+}
+
+header {
+    background-image: url("./Image/safar-safarov-MSN8TFhJ0is-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    background-color: black;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+header * {
+    z-index: 1;
+}
+
+header h1 {
+    color: #f0f0f0;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+header p {
+    color: #F8F32B;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.projects-section {
+    background-color: #8D99AE;
+    padding: 10rem 2rem;
+}
+
+.projects-section h2 {
+    color: #2B2D42;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin: 0 auto 6rem auto;
+}
+
+@media (max-width: 28.75em) {
+    .projects-section h2 {
+        font-size: 3rem;
+    }
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-tile img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+}
+
+.project-tile {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #2B2D42;
+    padding: 2rem 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.02);
+}
+
+.code {
+    transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+    color: #F8F32B;
+}
+
+.contacts-section {
+    background-color: #2B2D42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 2rem;
+}
+
+.contacts-section h2 {
+    font-size: 4.2rem;
+    color: #f0f0f0;
+
+}
+
+.contacts-section p {
+    font-size: 3rem;
+    color: #f0f0f0;
+}
+
+@media (max-width: 28.75em) {
+    .contacts-section h2 {
+        font-size: 3rem;
+    }
+}
+
+.links {
+    margin-top: 4rem;
+}
+
+.links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.links a:hover {
+    color: #F8F32B;
+}
+
+.links i {
+    font-size: 3rem;
+}
+
+@media (max-width: 28.75em) {
+    .links i {
+        font-size: 2rem;
+    }
+}
+
+footer {
+    background-color: #F8F32B;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .fa-heart {
+    color: red;
+}
