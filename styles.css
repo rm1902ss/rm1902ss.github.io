@@ -207,6 +207,27 @@ header p {
     color: #F8F32B;
 }
 
+.show-more-less-btn {
+    font-family: 'Sriracha', cursive;
+    background-color: #2B2D42;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: #f0f0f0;
+    width: 15rem;
+    border: none;
+    text-decoration: none;
+    border-radius: .5rem;
+    transition: background 0.3s ease-out;
+    cursor: pointer;
+    outline: none;
+}
+
+.show-more-less-btn:hover {
+    background: #F8F32B;
+    color: #2B2D42;
+}
+
 .contacts-section {
     background-color: #2B2D42;
     display: flex;
@@ -271,24 +292,4 @@ footer .fa-heart {
 
 .hide {
     display: none;
-}
-
-.show-more-less-btn {
-    font-family: 'Sriracha', cursive;
-    background-color: #2B2D42;
-    font-size: 2rem;
-    padding: 1rem;
-    color: #f0f0f0;
-    width: 15rem;
-    border: none;
-    text-decoration: none;
-    border-radius: .5rem;
-    transition: background 0.3s ease-out;
-    cursor: pointer;
-    outline: none;
-}
-
-.show-more-less-btn:hover {
-    background: #F8F32B;
-    color: #2B2D42;
 }
