@@ -17,7 +17,7 @@ html {
   }
 
 body {
-    font-family: 'Sriracha', cursive;
+    font-family: 'Sriracha', sans-serif;
     font-size: 1.8rem;
     line-height: 1.4;
 }
@@ -208,7 +208,7 @@ header p {
 }
 
 .show-more-less-btn {
-    font-family: 'Sriracha', cursive;
+    font-family: 'Sriracha', sans-serif;
     background-color: #2B2D42;
     font-size: 2rem;
     font-weight: bold;
